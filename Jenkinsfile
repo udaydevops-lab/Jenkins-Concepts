@@ -6,5 +6,11 @@ pipeline {
                 echo 'Hello World'
             }
         }
+
+        stage('testwebhook') {
+            steps {
+                echo 'Hello this is from stage 2'
+            }
+        }
     }
 }
